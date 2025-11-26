@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img class="logo" src="../assets/img/logo_Gringo's.jpg" alt="logo de la empresa">
+    <img class="logo" src="../assets/img/logo-gringos.jpg" alt="Logo del supermercado Gringo's">
     <h1>Gringo's online</h1>
   </header>
 
@@ -27,27 +27,23 @@
         <li><button class="filtro-categoria" data-categoria="golosinas">Golosinas</button></li>
         <li><button class="filtro-categoria" data-categoria="bebidas">Bebidas</button></li>
         <li><button class="filtro-categoria" data-categoria="snacks">Snacks</button></li>
+        <li><button class="filtro-categoria" data-categoria="limpieza">Limpieza</button></li>
+        <li><button class="filtro-categoria" data-categoria="carnicería">Carnicería</button></li>
       </ul>
     </aside>
 
     <section class="productos-listado">
       <h2>Productos disponibles</h2>
-      <div id="contenedor-productos" class="productos-grid">
-        <!-- Productos cargados dinámicamente -->
-      </div>
+      <div id="contenedor-productos" class="productos-grid"></div>
     </section>
 
-    
-<!-- Contenedor del pop-up (oculto por defecto) -->
-  <div id="custom-popup" class="modal-overlay">
+    <!-- Pop-up -->
+    <div id="custom-popup" class="modal-overlay">
       <div class="modal-content">
-          <p class="modal-message">Producto agregado al carrito</p>
-          <button id="close-popup-btn" class="modal-button">Aceptar</button>
-  </div>
-
-
-</div>
-
+        <p class="modal-message">Producto agregado al carrito</p>
+        <button id="close-popup-btn" class="modal-button">Aceptar</button>
+      </div>
+    </div>
   </main>
 
   <footer>

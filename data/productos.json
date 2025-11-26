@@ -1,72 +1,81 @@
 [
   {
     "id": 1,
-    "nombre": "Gomitas light",
-    "precio": 1446,
+    "nombre": "Gomitas frutales",
+    "descripcion": "Bolsa 500g surtidas",
+    "precio": 1446.50,
     "imagen": "https://picsum.photos/300/200?random=1",
     "categoria": "golosinas",
     "oferta": false
   },
   {
     "id": 2,
-    "nombre": "Detergente suave",
-    "precio": 2316,
-    "imagen": "https://picsum.photos/300/200?random=2",
-    "categoria": "limpieza",
-    "oferta": false
-  },
-  {
-    "id": 3,
     "nombre": "Caramelos extra",
-    "precio": 694,
-    "imagen": "https://picsum.photos/300/200?random=3",
+    "descripcion": "Paquete 250g",
+    "precio": 694.00,
+    "imagen": "https://picsum.photos/300/200?random=2",
     "categoria": "golosinas",
     "oferta": true
   },
   {
-    "id": 4,
+    "id": 3,
     "nombre": "Agua saborizada light",
-    "precio": 1278,
-    "imagen": "https://picsum.photos/300/200?random=4",
+    "descripcion": "Botella 1.5L",
+    "precio": 1278.75,
+    "imagen": "https://picsum.photos/300/200?random=3",
     "categoria": "bebidas",
     "oferta": false
   },
   {
+    "id": 4,
+    "nombre": "Lavandina concentrada",
+    "descripcion": "Botella 2L",
+    "precio": 1314.20,
+    "imagen": "https://picsum.photos/300/200?random=4",
+    "categoria": "limpieza",
+    "oferta": true
+  },
+  {
     "id": 5,
-    "nombre": "Shampoo light",
-    "precio": 2520,
+    "nombre": "Shampoo suave",
+    "descripcion": "Frasco 400ml",
+    "precio": 2520.00,
     "imagen": "https://picsum.photos/300/200?random=5",
     "categoria": "perfumería",
     "oferta": false
   },
   {
     "id": 6,
-    "nombre": "Verduras congeladas suave",
-    "precio": 905,
+    "nombre": "Verduras congeladas mixtas",
+    "descripcion": "Bolsa 1kg",
+    "precio": 905.30,
     "imagen": "https://picsum.photos/300/200?random=6",
     "categoria": "congelados",
     "oferta": false
   },
   {
     "id": 7,
-    "nombre": "Papa extra",
-    "precio": 1481,
+    "nombre": "Papa fresca",
+    "descripcion": "Bolsa 2kg",
+    "precio": 1481.00,
     "imagen": "https://picsum.photos/300/200?random=7",
     "categoria": "frutas y verduras",
     "oferta": false
   },
   {
     "id": 8,
-    "nombre": "Chupetín premium",
-    "precio": 1679,
+    "nombre": "Chupetín clásico",
+    "descripcion": "Unidad sabor frutal",
+    "precio": 1679.40,
     "imagen": "https://picsum.photos/300/200?random=8",
     "categoria": "golosinas",
     "oferta": false
   },
   {
     "id": 9,
-    "nombre": "Papas extra",
-    "precio": 2518,
+    "nombre": "Papas fritas extra",
+    "descripcion": "Paquete 300g",
+    "precio": 2518.00,
     "imagen": "https://picsum.photos/300/200?random=9",
     "categoria": "snacks",
     "oferta": false
@@ -74,31 +83,35 @@
   {
     "id": 10,
     "nombre": "Jugo light",
-    "precio": 1512,
+    "descripcion": "Botella 1L",
+    "precio": 1512.50,
     "imagen": "https://picsum.photos/300/200?random=10",
     "categoria": "bebidas",
     "oferta": false
   },
   {
     "id": 11,
-    "nombre": "Jamón cocido light",
-    "precio": 2695,
+    "nombre": "Jamón cocido",
+    "descripcion": "Fetas 250g",
+    "precio": 2695.00,
     "imagen": "https://picsum.photos/300/200?random=11",
     "categoria": "fiambres",
     "oferta": false
   },
   {
     "id": 12,
-    "nombre": "Verduras congeladas extra",
-    "precio": 2912,
+    "nombre": "Verduras congeladas premium",
+    "descripcion": "Bolsa 1kg",
+    "precio": 2912.40,
     "imagen": "https://picsum.photos/300/200?random=12",
     "categoria": "congelados",
     "oferta": true
   },
   {
     "id": 13,
-    "nombre": "Milanesa suave",
-    "precio": 1024,
+    "nombre": "Milanesa de pollo",
+    "descripcion": "Paquete 500g",
+    "precio": 1024.50,
     "imagen": "https://picsum.photos/300/200?random=13",
     "categoria": "carnicería",
     "oferta": false
@@ -106,23 +119,26 @@
   {
     "id": 14,
     "nombre": "Jamón cocido premium",
-    "precio": 858,
+    "descripcion": "Fetas 250g calidad extra",
+    "precio": 858.00,
     "imagen": "https://picsum.photos/300/200?random=14",
     "categoria": "fiambres",
     "oferta": false
   },
   {
     "id": 15,
-    "nombre": "Lavandina light",
-    "precio": 1314,
+    "nombre": "Lavandina clásica",
+    "descripcion": "Botella 2L",
+    "precio": 1314.20,
     "imagen": "https://picsum.photos/300/200?random=15",
     "categoria": "limpieza",
     "oferta": true
   },
   {
     "id": 16,
-    "nombre": "Jabón premium",
-    "precio": 589,
+    "nombre": "Jabón de tocador",
+    "descripcion": "Pack x3 unidades",
+    "precio": 589.90,
     "imagen": "https://picsum.photos/300/200?random=16",
     "categoria": "limpieza",
     "oferta": false
@@ -130,7 +146,8 @@
   {
     "id": 17,
     "nombre": "Carne picada premium",
-    "precio": 1887,
+    "descripcion": "Paquete 500g fresca",
+    "precio": 1887.90,
     "imagen": "https://picsum.photos/300/200?random=17",
     "categoria": "carnicería",
     "oferta": true
@@ -138,7 +155,8 @@
   {
     "id": 18,
     "nombre": "Chupetín clásico",
-    "precio": 1485,
+    "descripcion": "Unidad sabor frutal",
+    "precio": 1485.00,
     "imagen": "https://picsum.photos/300/200?random=18",
     "categoria": "golosinas",
     "oferta": false
@@ -146,23 +164,26 @@
   {
     "id": 19,
     "nombre": "Perfume clásico",
-    "precio": 2019,
+    "descripcion": "Frasco 100ml",
+    "precio": 2019.50,
     "imagen": "https://picsum.photos/300/200?random=19",
     "categoria": "perfumería",
     "oferta": true
   },
   {
     "id": 20,
-    "nombre": "Carne picada suave",
-    "precio": 2437,
+    "nombre": "Carne picada común",
+    "descripcion": "Paquete 500g",
+    "precio": 2437.00,
     "imagen": "https://picsum.photos/300/200?random=20",
     "categoria": "carnicería",
     "oferta": false
   },
   {
     "id": 21,
-    "nombre": "Asado suave",
-    "precio": 658,
+    "nombre": "Asado de tira",
+    "descripcion": "Corte vacuno 1kg",
+    "precio": 658.90,
     "imagen": "https://picsum.photos/300/200?random=21",
     "categoria": "carnicería",
     "oferta": false
@@ -170,15 +191,17 @@
   {
     "id": 22,
     "nombre": "Shampoo premium",
-    "precio": 2842,
+    "descripcion": "Frasco 500ml",
+    "precio": 2842.00,
     "imagen": "https://picsum.photos/300/200?random=22",
     "categoria": "perfumería",
     "oferta": false
   },
   {
     "id": 23,
-    "nombre": "Shampoo extra",
-    "precio": 1737,
+    "nombre": "Shampoo extra hidratante",
+    "descripcion": "Frasco 400ml",
+    "precio": 1737.50,
     "imagen": "https://picsum.photos/300/200?random=23",
     "categoria": "perfumería",
     "oferta": false
@@ -186,7 +209,8 @@
   {
     "id": 24,
     "nombre": "Detergente premium",
-    "precio": 2732,
+    "descripcion": "Botella 1L",
+    "precio": 2732.40,
     "imagen": "https://picsum.photos/300/200?random=24",
     "categoria": "limpieza",
     "oferta": false
@@ -194,23 +218,26 @@
   {
     "id": 25,
     "nombre": "Tomate premium",
-    "precio": 1014,
+    "descripcion": "Bolsa 1kg",
+    "precio": 1014.20,
     "imagen": "https://picsum.photos/300/200?random=25",
     "categoria": "frutas y verduras",
     "oferta": true
   },
   {
     "id": 26,
-    "nombre": "Manzana suave",
-    "precio": 2997,
+    "nombre": "Manzana roja",
+    "descripcion": "Bolsa 1kg",
+    "precio": 2997.00,
     "imagen": "https://picsum.photos/300/200?random=26",
     "categoria": "frutas y verduras",
     "oferta": false
   },
   {
     "id": 27,
-    "nombre": "Manzana light",
-    "precio": 2447,
+    "nombre": "Manzana verde",
+    "descripcion": "Bolsa 1kg",
+    "precio": 2447.80,
     "imagen": "https://picsum.photos/300/200?random=27",
     "categoria": "frutas y verduras",
     "oferta": false
@@ -218,7 +245,8 @@
   {
     "id": 28,
     "nombre": "Maní salado premium",
-    "precio": 895,
+    "descripcion": "Paquete 200g",
+    "precio": 895.00,
     "imagen": "https://picsum.photos/300/200?random=28",
     "categoria": "snacks",
     "oferta": false
@@ -226,7 +254,8 @@
   {
     "id": 29,
     "nombre": "Salame premium",
-    "precio": 976,
+    "descripcion": "Pieza 300g",
+    "precio": 976.50,
     "imagen": "https://picsum.photos/300/200?random=29",
     "categoria": "fiambres",
     "oferta": false
@@ -234,39 +263,44 @@
   {
     "id": 30,
     "nombre": "Esponja suave",
-    "precio": 1731,
+    "descripcion": "Pack x2 unidades",
+    "precio": 1731.00,
     "imagen": "https://picsum.photos/300/200?random=30",
     "categoria": "limpieza",
     "oferta": false
   },
   {
     "id": 31,
-    "nombre": "Esponja suave",
-    "precio": 1681,
+    "nombre": "Esponja suave premium",
+    "descripcion": "Pack x2 unidades",
+    "precio": 1681.00,
     "imagen": "https://picsum.photos/300/200?random=31",
     "categoria": "limpieza",
     "oferta": true
   },
   {
     "id": 32,
-    "nombre": "Palitos premium",
-    "precio": 2280,
+    "nombre": "Palitos salados premium",
+    "descripcion": "Paquete 250g",
+    "precio": 2280.50,
     "imagen": "https://picsum.photos/300/200?random=32",
     "categoria": "snacks",
     "oferta": false
   },
   {
     "id": 33,
-    "nombre": "Manzana suave",
-    "precio": 2178,
+    "nombre": "Manzana golden",
+    "descripcion": "Bolsa 1kg",
+    "precio": 2178.20,
     "imagen": "https://picsum.photos/300/200?random=33",
     "categoria": "frutas y verduras",
     "oferta": false
   },
   {
     "id": 34,
-    "nombre": "Detergente premium",
-    "precio": 1794,
+    "nombre": "Detergente premium concentrado",
+    "descripcion": "Botella 1L",
+    "precio": 1794.00,
     "imagen": "https://picsum.photos/300/200?random=34",
     "categoria": "limpieza",
     "oferta": true
@@ -274,7 +308,8 @@
   {
     "id": 35,
     "nombre": "Jabón líquido suave",
-    "precio": 2748,
+    "descripcion": "Frasco 500ml",
+    "precio": 2748.30,
     "imagen": "https://picsum.photos/300/200?random=35",
     "categoria": "perfumería",
     "oferta": false
@@ -282,7 +317,8 @@
   {
     "id": 36,
     "nombre": "Chupetín light",
-    "precio": 2783,
+    "descripcion": "Unidad sabor frutal",
+    "precio": 2783.00,
     "imagen": "https://picsum.photos/300/200?random=36",
     "categoria": "golosinas",
     "oferta": false
@@ -290,15 +326,17 @@
   {
     "id": 37,
     "nombre": "Desodorante de piso suave",
-    "precio": 969,
+    "descripcion": "Botella 1L",
+    "precio": 969.50,
     "imagen": "https://picsum.photos/300/200?random=37",
     "categoria": "limpieza",
     "oferta": false
   },
   {
     "id": 38,
-    "nombre": "Shampoo extra",
-    "precio": 2281,
+    "nombre": "Shampoo extra volumen",
+    "descripcion": "Frasco 400ml",
+    "precio": 2281.00,
     "imagen": "https://picsum.photos/300/200?random=38",
     "categoria": "perfumería",
     "oferta": false
@@ -306,15 +344,17 @@
   {
     "id": 39,
     "nombre": "Bife premium",
-    "precio": 1549,
+    "descripcion": "Corte vacuno 500g",
+    "precio": 1549.20,
     "imagen": "https://picsum.photos/300/200?random=39",
     "categoria": "carnicería",
     "oferta": true
   },
   {
     "id": 40,
-    "nombre": "Detergente light",
-    "precio": 514,
+    "nombre": "Detergente clásico",
+    "descripcion": "Botella 1L",
+    "precio": 514.00,
     "imagen": "https://picsum.photos/300/200?random=40",
     "categoria": "limpieza",
     "oferta": false
@@ -322,7 +362,8 @@
   {
     "id": 41,
     "nombre": "Lechuga premium",
-    "precio": 950,
+    "descripcion": "Unidad fresca",
+    "precio": 950.00,
     "imagen": "https://picsum.photos/300/200?random=41",
     "categoria": "frutas y verduras",
     "oferta": false
@@ -330,7 +371,8 @@
   {
     "id": 42,
     "nombre": "Plato premium",
-    "precio": 2211,
+    "descripcion": "Set x6 unidades",
+    "precio": 2211.50,
     "imagen": "https://picsum.photos/300/200?random=42",
     "categoria": "bazar",
     "oferta": true
@@ -338,15 +380,17 @@
   {
     "id": 43,
     "nombre": "Queso suave",
-    "precio": 892,
+    "descripcion": "Pieza 300g",
+    "precio": 892.40,
     "imagen": "https://picsum.photos/300/200?random=43",
     "categoria": "fiambres",
     "oferta": false
   },
   {
     "id": 44,
-    "nombre": "Esponja clásico",
-    "precio": 1716,
+    "nombre": "Esponja clásica",
+    "descripcion": "Pack x2 unidades",
+    "precio": 1716.00,
     "imagen": "https://picsum.photos/300/200?random=44",
     "categoria": "limpieza",
     "oferta": false
@@ -354,7 +398,8 @@
   {
     "id": 45,
     "nombre": "Hamburguesas premium",
-    "precio": 930,
+    "descripcion": "Caja x4 unidades",
+    "precio": 930.00,
     "imagen": "https://picsum.photos/300/200?random=45",
     "categoria": "congelados",
     "oferta": false
@@ -362,7 +407,8 @@
   {
     "id": 46,
     "nombre": "Carne picada extra",
-    "precio": 2319,
+    "descripcion": "Paquete 500g fresca",
+    "precio": 2319.00,
     "imagen": "https://picsum.photos/300/200?random=46",
     "categoria": "carnicería",
     "oferta": true
@@ -370,7 +416,8 @@
   {
     "id": 47,
     "nombre": "Vaso clásico",
-    "precio": 1245,
+    "descripcion": "Set x6 unidades",
+    "precio": 1245.00,
     "imagen": "https://picsum.photos/300/200?random=47",
     "categoria": "bazar",
     "oferta": true
@@ -378,15 +425,17 @@
   {
     "id": 48,
     "nombre": "Papa extra",
-    "precio": 1341,
+    "descripcion": "Bolsa 2kg",
+    "precio": 1341.20,
     "imagen": "https://picsum.photos/300/200?random=48",
     "categoria": "frutas y verduras",
     "oferta": false
   },
   {
     "id": 49,
-    "nombre": "Carne picada light",
-    "precio": 2614,
+    "nombre": "Carne picada común",
+    "descripcion": "Paquete 500g",
+    "precio": 2614.00,
     "imagen": "https://picsum.photos/300/200?random=49",
     "categoria": "carnicería",
     "oferta": false
@@ -394,7 +443,8 @@
   {
     "id": 50,
     "nombre": "Chocolate light",
-    "precio": 1890,
+    "descripcion": "Tableta 100g",
+    "precio": 1890.50,
     "imagen": "https://picsum.photos/300/200?random=50",
     "categoria": "golosinas",
     "oferta": true

@@ -16,17 +16,36 @@ El objetivo es crear el sitio online de un supermercado para que los clientes pu
 
 
 ## Estructura del Proyecto
-.
-├── assets/
-│   └── img/
-│       ├── logo_Gringo's.jpg
-│       └── gringo's_foto_fachada.png
-├── css/
-│   └── styles.css
-├── pages/
-│   ├── carrito.html
-│   ├── contacto.html
-│   └── productos.html
-├── script.js
-└── index.html
-└── README.md
+C:.
+|   conexion.php
+|   estructura.txt
+|   index.html
+|   login.php
+|   README.md
+|   
++---assets
+|   \---img
+|           gringo's_foto_fachada.jpg
+|           gringo's_foto_fachada.png
+|           logo_Gringo's.jpg
+|           oferta1.jpg
+|           oferta2.jpg
+|           oferta3.jpg
+|           supermercado_gringos_cover.jpg
+|           
++---css
+|       styles.css
+|       
++---data
+|       productos.json
+|       
++---js
+|       script.js
+|       
+\---pages
+        carrito.html
+        contacto.html
+        login.html
+        productos.html
+        register.html
+        registrar.php

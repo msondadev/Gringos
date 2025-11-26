@@ -89,7 +89,7 @@ main {
 
 .oferta-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     justify-content: center;
 }
@@ -122,6 +122,12 @@ main {
     font-size: 1.1rem;
     margin: 0 0 5px;
     color: #333;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 4px 0;
 }
 
 .precio {
