@@ -1,4 +1,5 @@
 
+/*Estructura y tarjetas*/
 * {
     padding: 0;
     margin: 0;
@@ -41,7 +42,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
 .section-index {
     position: relative;
     height: 30vh;
@@ -49,9 +49,6 @@ nav a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Le metemos un toque de desenfoque a la imagen */
-    /* filter: blur(3px); */ 
-    /* Pendiente: averiguar como aplico el blur solo a la img */
     overflow: hidden;
 
     display: flex;
@@ -87,11 +84,11 @@ main {
     margin: auto;
 }
 
-.oferta-grid {
+/* 🔹 Grid de tarjetas */
+.productos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 tarjetas por fila */
     gap: 1.5rem;
-    justify-content: center;
 }
 
 .oferta-tarjeta {
@@ -104,6 +101,11 @@ main {
     justify-content: space-between;
     text-align: center;
     color: #333;
+    transition: transform 0.2s ease;
+}
+
+.oferta-tarjeta:hover {
+    transform: scale(1.03);
 }
 
 .oferta-tarjeta img {
@@ -148,48 +150,44 @@ main {
 
 .btn-comprar:hover {
     background: #236a21;
-
 }
 
 footer {
-background: #333;
-color: white;
-text-align: center;
-padding: 1.5rem;
-margin-top: 2.5rem;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2.5rem;
 }
 
+
 /* ############## */
-/* Usamos Queries */
+/* Responsive Queries */
 /* ############## */
 
-@media (max-width: 768px) {  /* Para tablets */
-    
+@media (max-width: 768px) {  /* Tablets */
     section h2 {
         font-size: 2rem;
         padding: 15px 25px;
     }
     
-    .oferta-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* 2 tarjetas por fila */
     }
-
 }
 
-
-@media (max-width: 480px) {  /* Para celus */
-    
+@media (max-width: 480px) {  /* Celulares */
     header h1 {
         font-size: 1.8rem;
     }
 
     nav {
-        flex-direction: column;  /* Aplila los enlaces de nav */
+        flex-direction: column;
         padding: 0.5rem;
     }
 
     nav a {
-        margin: 0.5rem 0;  /* Esp vertical e/enlaces */
+        margin: 0.5rem 0;
         font-size: 0.9rem;
     }
 
@@ -202,20 +200,16 @@ margin-top: 2.5rem;
         font-size: 1.8rem;
     }
 
-    .oferta-grid {
-        grid-template-columns: 1fr;   /* 1 sola col para celus */
+    .productos-grid {
+        grid-template-columns: 1fr !important; /* fuerza a 1 tarjeta por fila */
         padding: 1rem;
     }
 
     .oferta-tarjeta {
-        width: 90%;
-        margin: 0 auto;   /* Centra la tarjeta en horizontal */
+        width: 100%;
+        margin: 0 auto;
     }
-
 }
-
-
-
 
 /* ############## */
 /* contacto.html  */
@@ -223,7 +217,7 @@ margin-top: 2.5rem;
 
 .section-formulario {
     max-width: 800px;
-    margin: 3rem auto;  /* Centra la sección del margen sup/inf */
+    margin: 3rem auto;
     padding: 2.5rem;
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -250,9 +244,9 @@ margin-top: 2.5rem;
 
 .section-formulario form {
     display: grid;
-    grid-template-columns: 1fr;  /* Por defecto una sola col */
-    gap: 1.5rem;  
-    text-align: left; 
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
 }
 
 .formulario {
@@ -266,7 +260,7 @@ margin-top: 2.5rem;
     color: #333;
 }
 
-/* Estilos para los inputs */
+/* Inputs */
 .formulario input, .formulario textarea {
     width: 100%;
     padding: 12px 15px;
@@ -297,24 +291,17 @@ margin-top: 2.5rem;
     background-color: #1d5c1b;
 }
 
-/* ############## */
-/* Usamos Queries */
-/* ############## */
-
 @media (min-width: 768px) {
-
     .section-formulario form {
-        grid-template-columns: 1fr 1fr;  /* Dos col */
+        grid-template-columns: 1fr 1fr;
     }
 
     .btn-submit {
-        grid-template-columns: 1;
+        grid-column: span 2; /* ✅ ocupa todo el ancho en grid */
     }
-    
 }
 
 @media (max-width: 600px) {
-    
     .section-formulario {
         padding: 1.5rem;
         margin: 2rem 1rem;
@@ -332,10 +319,9 @@ margin-top: 2.5rem;
         width: 100%;
         padding: 12px 20px;
     }
-    
 }
 
-
+/* formulario-contacto */
 .formulario-contacto {
   max-width: 600px;
   margin: 2rem auto;
@@ -377,8 +363,6 @@ margin-top: 2.5rem;
   background-color: #245bb5;
 }
 
-
-
 /* 🌟 Estilo para la tabla del carrito */
 #contenedor-carrito table {
   width: 100%;
@@ -395,7 +379,7 @@ margin-top: 2.5rem;
   padding: 12px;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  color: #333
+  color: #333;
 }
 
 #contenedor-carrito thead {
@@ -433,7 +417,6 @@ margin-top: 2.5rem;
   background-color: #c0392b;
 }
 
-
 #btn-vaciar-carrito {
   margin-top: 0.75rem;
   padding: 0.75rem;
@@ -447,61 +430,59 @@ margin-top: 2.5rem;
 
 #btn-vaciar-carrito:hover {
     background: #04e72a;
-
 }
 
-/* Estilos del pop-up */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            visibility: hidden; /* Oculto por defecto */
-            opacity: 0;
-            transition: visibility 0s, opacity 0.3s ease;
-        }
+/* 🌟 Estilos del pop-up */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden; /* Oculto por defecto */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+}
 
-        .modal-overlay.show {
-            visibility: visible;
-            opacity: 1;
-        }
+.modal-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
 
-        .modal-content {
-            background-color: #333;
-            color: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            text-align: center;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
-            max-width: 90%;
-            width: 350px;
-        }
+.modal-content {
+    background-color: #333;
+    color: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    max-width: 90%;
+    width: 350px;
+}
 
-        .modal-message {
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
-        }
+.modal-message {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
 
-        .modal-button {
-            background-color: #4CAF50; /* Un verde similar a tu botón de la imagen */
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
+.modal-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
 
-        .modal-button:hover {
-            background-color: #45a049;
-        }
-
+.modal-button:hover {
+    background-color: #45a049;
+}
 
 /* 🌟 Total destacado */
 #total-carrito {
@@ -513,7 +494,7 @@ margin-top: 2.5rem;
   color: beige;
 }
 
-/* 🟢 Responsive */
+/* 🟢 Responsive carrito */
 @media (max-width: 768px) {
   #contenedor-carrito table,
   #contenedor-carrito thead,
@@ -554,3 +535,4 @@ margin-top: 2.5rem;
     display: none;
   }
 }
+
