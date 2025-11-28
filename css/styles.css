@@ -30,12 +30,14 @@ nav {
     display: flex;
     justify-content: center;
     padding: 1rem;
+    
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
+    font-size: 1.3rem;
 }
 
 nav a:hover {
