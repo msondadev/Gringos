@@ -144,6 +144,8 @@ main {
     padding: 0.75rem;
     background: #04e72a;
     color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 0.5rem;
