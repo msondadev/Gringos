@@ -481,7 +481,10 @@ footer {
 #contenedor-carrito button.restar:hover {
   background-color: #c0392b;
 }
-
+.btn-pagar-vaciar{
+  display: flex;
+  justify-content: space-between;
+}
 #btn-vaciar-carrito {
   margin-top: 0.75rem;
   padding: 0.75rem;
@@ -496,7 +499,19 @@ footer {
 #btn-vaciar-carrito:hover {
     background: #04e72a;
 }
+#btn-pagar-carrito {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #236a21;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
 
+#btn-pagar-carrito:hover {
+    background: #04e72a;
 /* 🌟 Estilos del pop-up */
 .modal-overlay {
     position: fixed;
@@ -554,7 +569,8 @@ footer {
   font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   text-align: right;
   color: beige;
 }
