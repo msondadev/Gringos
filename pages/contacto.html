@@ -28,8 +28,7 @@
             <h2>¡Contáctanos!</h2>
             <p>¿Tenés alguna pregunta, sugerencia o necesitas ayuda con tu pedido?. Completa el formulario y nos pondremos en contacto lo antes posible</p>
 
-            <form action="https://formspree.io/f/mrbqwdyj" method="POST" enctype="multipart/form-data" onsubmit="return mostrarConfirmacion()">
-
+            <form action="../contacto.php" method="POST" enctype="multipart/form-data" onsubmit="return mostrarConfirmacion()">
                 <div class="formulario">
                     <label for="nombre">Nombre completo:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu/s nombre/s" required> 
@@ -60,12 +59,7 @@
     <footer>
         <p>&copy; 2025 Gringo's - Todos los derechos reservados</p>
     </footer>
-        <script src="script.js">
-     
-        function mostrarConfirmacion() {
-        alert("¡Su formulario fue enviado!");
-            return true; // Permite que el formulario se envíe después de mostrar el pop-up
-}
+<script src="../js/script.js">
 </script> 
 
 

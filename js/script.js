@@ -1,3 +1,8 @@
+
+  function mostrarConfirmacion() {
+        alert("¡Su formulario fue enviado!");
+            return true; // Permite que el formulario se envíe después de mostrar el pop-up
+}
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById('custom-popup');
   const closeBtn = document.getElementById('close-popup-btn');
@@ -55,8 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch(err => console.error("Error cargando ofertas:", err));
   }
-
-  // Productos en productos.html con filtro
+    // Productos en productos.html con filtro
   const contenedorProductos = document.getElementById("contenedor-productos");
   if (contenedorProductos) {
     fetch("../data/productos.json")
