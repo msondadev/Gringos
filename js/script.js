@@ -1,7 +1,30 @@
 
-  function mostrarConfirmacion() {
-        alert("¡Su formulario fue enviado!");
-            return true; // Permite que el formulario se envíe después de mostrar el pop-up
+  //function mostrarConfirmacion() {
+    //    alert("¡Su formulario fue enviado!");
+    //    return true; // Permite que el formulario se envíe después de mostrar el pop-up
+//}
+function simularEnvio(event) {
+    // 1. Detiene el envío del formulario. ESTO es lo que previene que 
+    //    los datos lleguen a contacto.php.
+    event.preventDefault(); 
+    
+    // 2. Aquí puedes añadir lógica de validación simple si quieres
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    
+    if (nombre.trim() === "" || email.trim() === "") {
+        alert("Por favor, completa los campos de Nombre y Email.");
+        return false; // No muestra la confirmación de envío si faltan datos
+    }
+
+    // 3. Muestra el pop-up de éxito simulado
+    alert("✅ Su formulario fue 'enviado'.");
+    
+    // Opcional: Para resetear el formulario después de la "simulación"
+    event.target.reset(); 
+    
+    // IMPORTANTE: Retornar false asegura que el envío del formulario se detiene en navegadores antiguos.
+    return false;
 }
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById('custom-popup');
