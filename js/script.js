@@ -3,6 +3,28 @@
     //    alert("¡Su formulario fue enviado!");
     //    return true; // Permite que el formulario se envíe después de mostrar el pop-up
 //}
+function mostrarModal(mensaje, exito = true) {
+    const overlay = document.getElementById('custom-popup'); 
+    const contenido = overlay ? overlay.querySelector('.modal-message') : null;
+       
+    if (overlay && contenido) {
+        // Asigna el mensaje
+        contenido.textContent = mensaje;
+
+        // Si quieres cambiar el color/icono basado en el éxito:
+        if (exito) {
+            contenido.style.color = '#4CAF50'; // Verde
+        } else {
+            contenido.style.color = '#e74c3c'; // Rojo
+        }
+
+        // Muestra el modal añadiendo la clase 'show'
+        overlay.classList.add('show');
+    } else {
+        // Fallback si no encuentra los elementos
+        alert(mensaje);
+    }
+}
 function simularEnvio(event) {
     // 1. Detiene el envío del formulario. ESTO es lo que previene que 
     //    los datos lleguen a contacto.php.
@@ -18,7 +40,8 @@ function simularEnvio(event) {
     }
 
     // 3. Muestra el pop-up de éxito simulado
-    alert("✅ Su formulario fue 'enviado'.");
+    mostrarModal("✅ Su formulario fue enviado con EXITO!!!");
+    //alert("✅ Su formulario fue 'enviado'.");
     
     // Opcional: Para resetear el formulario después de la "simulación"
     event.target.reset(); 
