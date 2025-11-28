@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+</head>
+<body>
+  <section class="login-container">
+    <h2>Registro</h2>
+    <form id="registerForm">
+      <div class="formulario">
+        <label for="regEmail">Correo electrónico:</label>
+        <input type="email" id="regEmail" required>
+      </div>
+      <div class="formulario">
+        <label for="regPassword">Contraseña:</label>
+        <input type="password" id="regPassword" required>
+      </div>
+      <button type="submit" class="btn-submit">Registrarse</button>
+    </form>
+  </section>
+
+  <!-- SDK de Firebase -->
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth-compat.js"></script>
+
+
+
+  <script>
+    // Configuración de tu proyecto Firebase
+    const firebaseConfig = {
+        apiKey: "AIzaSyCAD6KgDeSY-Cu6FF1Lt3dssfGUqfyH1-A",
+        authDomain: "com.devgroup.medicapp",
+        projectId: "medicapp-865b0D",
+    };
+
+    // Inicializar Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    // Lógica de registro (después de inicializar Firebase)
+    document.getElementById("registerForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("regEmail").value;
+      const password = document.getElementById("regPassword").value;
+
+      auth.createUserWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+          alert("Usuario registrado correctamente");
+          window.location.href = "login.html";
+        })
+        .catch((error) => {
+          alert("Error: " + error.message);
+          console.error(error); // para ver detalles en consola
+        });
+    });
+  </script>
+</body>
+</html>
+
+
+
+          <!-- 
+        apiKey: "AIzaSyCAD6KgDeSY-Cu6FF1Lt3dssfGUqfyH1-A",
+        authDomain: "com.devgroup.medicapp",
+        projectId: "medicapp-865b0D", 
+        -->
+
+
