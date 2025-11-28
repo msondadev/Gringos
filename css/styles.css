@@ -276,6 +276,94 @@ footer {
     }
 }
 
+
+
+/* ############## */
+/* login.html  */
+/* ############## */
+.login-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f1f8e9, #c5e1a5);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #2e7d32;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #1b5e20;
+}
+
+.login-container p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #4e4e4e;
+}
+
+.formulario {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.formulario input:focus {
+  border-color: #66bb6a;
+  outline: none;
+}
+
+.btn-submit {
+  background-color: #43a047;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #2e7d32;
+}
+
+.link-registro {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #1b5e20;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.link-registro:hover {
+  color: #388e3c;
+}
+
+
 /* ############## */
 /* contacto.html  */
 /* ############## */
